@@ -122,7 +122,6 @@ a:link{
 }
 
 
-
 /* Species Listings*/
 .species #cockatooSpecies{
 	display:none;
@@ -157,6 +156,42 @@ a:link{
 .species #kookaburraSpecies{
 	display:none;
 }
+.species #macawSpecies{
+	display:none;
+}
+.species #merganserSpecies{
+	display:none;
+}
+.species #owlSpecies{
+	display:none;
+}
+.species #parrotSpecies{
+	display:none;
+}
+.species #pigeonSpecies{
+	display:none;
+}
+.species #pheasantSpecies{
+	display:none;
+}
+.species #starlingSpecies{
+	display:none;
+}
+.species #storkSpecies{
+	display:none;
+}
+.species #swanSpecies{
+	display:none;
+}
+.species #tealSpecies{
+	display:none;
+}
+.species #turacoSpecies{
+	display:none;
+}
+.species #vultureSpecies{
+	display:none;
+}
 
 .species a {
 	font-family: Verdana;
@@ -182,7 +217,7 @@ ul.cockatoos li{
 	font-weight:bolder;
 	color: black;
 }
-
+	
 ul.cranes {
 	list-style-type: none;
 	margin: 0px;
@@ -197,7 +232,7 @@ ul.cranes li{
 	font-weight:bolder;
 	color: black;
 }
-
+	
 ul.doves {
 	list-style-type: none;
 	margin: 0px;
@@ -212,7 +247,7 @@ ul.doves li{
 	font-weight:bolder;
 	color: black;
 }
-
+	
 ul.ducks {
 	list-style-type: none;
 	margin: 0px;
@@ -257,7 +292,7 @@ ul.falcons li{
 	font-weight:bolder;
 	color: black;
 }
-
+	
 ul.finches {
 	list-style-type: none;
 	margin: 0px;
@@ -272,7 +307,7 @@ ul.finches li{
 	font-weight:bolder;
 	color: black;
 }
-
+	
 ul.geese {
 	list-style-type: none;
 	margin: 0px;
@@ -287,7 +322,7 @@ ul.geese li{
 	font-weight:bolder;
 	color: black;
 }
-
+	
 ul.hornbills{
 	list-style-type: none;
 	margin: 0px;
@@ -302,7 +337,7 @@ ul.hornbills li{
 	font-weight:bolder;
 	color: black;
 }
-
+	
 ul.ibises{
 	list-style-type: none;
 	margin: 0px;
@@ -317,7 +352,7 @@ ul.ibises li{
 	font-weight:bolder;
 	color: black;
 }
-
+	
 ul.kookaburras{
 	list-style-type: none;
 	margin: 0px;
@@ -332,6 +367,183 @@ ul.kookaburras li{
 	font-weight:bolder;
 	color: black;
 }
+	
+ul.macaws{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+}
+ul.macaws li{
+	display: inline-block;
+	text-align: left;
+	font-family: Verdana;
+	font-size: 13px;
+	font-weight:bolder;
+	color: black;
+}
+	
+ul.mergansers{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+}
+ul.mergansers li{
+	display: inline-block;
+	text-align: left;
+	font-family: Verdana;
+	font-size: 13px;
+	font-weight:bolder;
+	color: black;
+}
+	
+ul.owls{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+}
+ul.owls li{
+	display: inline-block;
+	text-align: left;
+	font-family: Verdana;
+	font-size: 13px;
+	font-weight:bolder;
+	color: black;
+}
+	
+ul.parrots{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+}
+ul.parrots li{
+	display: inline-block;
+	text-align: left;
+	font-family: Verdana;
+	font-size: 13px;
+	font-weight:bolder;
+	color: black;
+}
+	
+ul.pigeons {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+}
+ul.pigeons li{
+	display: inline-block;
+	text-align: left;
+	font-family: Verdana;
+	font-size: 13px;
+	font-weight:bolder;
+	color: black;
+}
 
+ul.pheasants {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+}
+ul.pheasants li{
+	display: inline-block;
+	text-align: left;
+	font-family: Verdana;
+	font-size: 13px;
+	font-weight:bolder;
+	color: black;
+}
 
+ul.starlings {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+}
+ul.starlings li{
+	display: inline-block;
+	text-align: left;
+	font-family: Verdana;
+	font-size: 13px;
+	font-weight:bolder;
+	color: black;
+}
 
+ul.storks {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+}
+ul.storks li{
+	display: inline-block;
+	text-align: left;
+	font-family: Verdana;
+	font-size: 13px;
+	font-weight:bolder;
+	color: black;
+}
+
+ul.swans {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+}
+ul.swans li{
+	display: inline-block;
+	text-align: left;
+	font-family: Verdana;
+	font-size: 13px;
+	font-weight:bolder;
+	color: black;
+}
+
+ul.teals {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+}
+ul.teals li{
+	display: inline-block;
+	text-align: left;
+	font-family: Verdana;
+	font-size: 13px;
+	font-weight:bolder;
+	color: black;
+}
+
+ul.turacos {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+}
+ul.turacos li{
+	display: inline-block;
+	text-align: left;
+	font-family: Verdana;
+	font-size: 13px;
+	font-weight:bolder;
+	color: black;
+}
+
+ul.vultures {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+}
+ul.vultures li{
+	display: inline-block;
+	text-align: left;
+	font-family: Verdana;
+	font-size: 13px;
+	font-weight:bolder;
+	color: black;
+}
