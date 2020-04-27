@@ -44,6 +44,39 @@ hr {
 }
 
 
+/*Arrow Change*/
+.change .arrow1 {
+	opacity: 0;
+}
+.change .arrow2 {
+	opacity: 100;
+}
+
+
+/*Footer Sticky*/
+.footer{
+	position: fixed;
+	width: 80%;
+	height: 90px;
+	left: 0;
+	bottom: 0;
+	margin: 0;
+	background-color: orange;
+}
+.footer button {
+	position: fixed;
+	width: 100%;
+	left: 50%;
+	transform: translate(-50%);
+	
+	display: inline-block;
+	padding: 15px 25px;
+
+	border-color: transparent;
+	background-color: orange;
+}
+
+
 /*Menu Listings*/
 .topnav {
 	display: inline-block;
@@ -63,58 +96,57 @@ hr {
 
 
 
-/*Footer Sticky*/
-.footer{
-	position: fixed;
-	width: 80%;
-	height: 90px;
-	left: 0;
-	bottom: 0;
-	margin: 0;
-	background-color: orange;
-}
-.footer button {
-	position: fixed;
-	left: 50%;
-	transform: translate(-50%, 25%);
-	
-	display: inline-block;
-	padding: 15px 25px;
-	
-	font-family: Verdana;
-	font-weight: bold;
-	font-size: 20px;
-	color: black;
-	text-align: center;
-	
-	background-color: #4CAF50;
-	
-	border-color: black;
-	border-width: 3px;
-}
-
-
-/*Classification Listings*/
-ul.classifications{
+/*Animal Listings*/
+ul.animals{
 	list-style-type: none;
 	margin: 0px;
 	padding: 0px;
+	text-align: center;
 }
-
-ul.classifications li{
+ul.animals li{
 	display: inline;
 	font-family: Verdana;
-	font-size: 25px;
-	font-weight: bolder;
+	font-size: 20px;
+	font-weight:bolder;
 	color: black;
 	padding-top: -90px;
 	
 }
-.amphibPic, .birdPic, .fishPic, .insectPic, .mammalPic, .reptilePic{
+.animalPic{
 	height: 60px;
 }
 a:link{
 	color: black;
 	background-color: transparent;
   	text-decoration: none;
+}
+
+
+
+/* Species Listings*/
+.species #frogSpecies{
+	display:none;
+}
+.species a {
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: 15px;
+	color: black;
+	text-align: left;
+	display: inline-block;
+	margin-left: 35px;
+}
+ul.frogs{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+}
+ul.frogs li{
+	display: inline-block;
+	text-align: left;
+	font-family: Verdana;
+	font-size: 13px;
+	font-weight:bolder;
+	color: black;
 }

@@ -1,38 +1,42 @@
 <!doctype html>
 <html>
 	
+	
+	
 <head>
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-webapp-status-bar-style" content="black">
 	<meta name="viewport" content="width=device-width, user-scalable=no" >
 	<title>Create Zoo</title>
 	<link rel="stylesheet" href="createZooStyle.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	
 </head>
 
 <header>
-	ZOOADVISOR
+		ZOOADVISOR
 	
-	<div class="topnav">
-		<!--Menu Actions-->
-		<div class="menu" onclick="menuToX(this), showMenu()">
+		<div class="topnav">
+			<!--Menu Actions-->
+			<div class="menu" onclick="menuToX(this), showMenu()">
 			<div class="bar1"></div>
 			<div class="bar2"></div>
 			<div class="bar3"></div>
 		</div>
-	</div>
+		</div>
 	
-	<hr>
+		<hr>
 	
 	<div class="links">
 		<div id="myLinks">
-			<img src="AnimalPictures/HomePage/Tiger.png" alt="Tiger" width="80px" border = "3" align="middle">
+			<img src="AnimalPictures/Menu/Tiger.png" alt="Tiger" width="80px" border = "3" align="middle">
 			<a href="#animals" align="middle">ANIMALS</a>
 			<hr>
-			<img src="AnimalPictures/HomePage/ZooPhoto.png" alt="Zoo Locations" width="80px" border = "3" align="middle">
+			<img src="AnimalPictures/Menu/ZooPhoto.png" alt="Zoo Locations" width="80px" border = "3" align="middle">
 			<a href="#zoos">ZOOS</a>
 			<hr>
-			<img src="AnimalPictures/HomePage/QuestionMark.png" alt="Help" width="80px" border = "3" align="middle">
-			<a href="#zoos">HELP</a>
+			<img src="AnimalPictures/Menu/QuestionMark.png" alt="Help" width="80px" border = "3" align="middle">
+				<a href="#zoos">HELP</a>
 			<hr>
 		</div>
 	</div>	
@@ -46,48 +50,57 @@
 		function showMenu() {
 			var x = document.getElementById("myLinks");
 			if (x.style.display == "block"){
-				x.style.display = "none";
-			} else {
-				x.style.display = "block";
+					x.style.display = "none";
+				} else {
+					x.style.display = "block";
+				}
 			}
-		}
-	</script>
-		
-		
+		</script>	
+</header>
 
 	
-	
-</header>
-	
+
 <body>
-	
+
 	<!--Classifications-->
 	<ul class = "classifications">
+		
 		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 		<img class="amphibPic" src="AnimalPictures/Classifications/Amphibians.png" alt="frog" border = "3" style="vertical-align: middle">
-		<li>AMPHIBIANS </li>
-		<i class="fas fa-arrow-alt-circle-right" style="font-size: 40px"></i>
+		<li>AMPHIBIANS </li>&ensp;
+		<a href="Amphibians/amphibians.html">
+			<i class="fas fa-arrow-alt-circle-right" style="font-size: 40px"></i>
+		</a>
 		
 		<br><br><img class="birdPic" src="AnimalPictures/Classifications/Birds.png" alt="falcon" border = "3" style="vertical-align: middle">
-		<li class = "birds">BIRDS </li>
-		<i class="fas fa-arrow-alt-circle-right" style="font-size: 40px"></i>
-	
+		<li class = "birds">BIRDS </li>&ensp;
+		<a href="Birds/birds.html">
+			<i class="fas fa-arrow-alt-circle-right" style="font-size: 40px"></i>
+		</a>
+			
 		<br><br><img class="fishPic" src="AnimalPictures/Classifications/Fish.png" alt="fish" border = "3" style="vertical-align: middle">
-		<li class = "fish">FISH </li>
+		<li class = "fish">FISH </li>&ensp;
 		<i class="fas fa-arrow-alt-circle-right" style="font-size: 40px"></i>
 		
 		<br><br><img class="insectPic" src="AnimalPictures/Classifications/Insect.png" alt="insect" border = "3" style="vertical-align: middle">
-		<li class = "insects">INSECTS </li>
+		<li class = "insects">INSECTS </li>&ensp;
 		<i class="fas fa-arrow-alt-circle-right" style="font-size: 40px"></i>
 		
 		<br><br><img class="mammalPic" src="AnimalPictures/Classifications/Mammal.png" alt="bear" border = "3" style="vertical-align: middle">
-		<li class = "mammals">MAMMALS </li>
+		<li class = "mammals">MAMMALS </li>&ensp;
 		<i class="fas fa-arrow-alt-circle-right" style="font-size: 40px"></i>
 		
 		<br><br><img class="reptilePic" src="AnimalPictures/Classifications/Reptile.png" alt="reptile" border = "3" style="vertical-align: middle">
-		<li class = "reptiles">REPTILES </li>
+		<li class = "reptiles">REPTILES </li>&ensp;
 		<i class="fas fa-arrow-alt-circle-right" style="font-size: 40px"></i>
+		
+		<br><br><br><br><br><br>
 	</ul>
+	
+	<!--DONE Footer-->
+	<div class="footer">
+		<button class="button" onClick="#">DONE</button>
+	</div>
 
 </body>
 

@@ -1,0 +1,337 @@
+/*ZooAdvisor Title*/
+body {
+	background-color: orange;
+}
+header {
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: 35px;
+	color: black;
+	text-align: left;
+	margin: 10px;
+}
+hr {
+	border: 3px solid black;
+}
+
+
+/*Menu Button*/
+.menu {
+	display: inline-table;
+	margin-left: 13px;
+	margin-top: 5px;
+}
+.bar1, .bar2, .bar3 {
+	width: 35px;
+	height: 5px;
+	background-color: black;
+	margin: 6px 0;
+	transition: 0.4s;
+}
+/*Rotate first bar.*/
+.change .bar1 {
+	-webkit-transform: rotate(-45deg) translate(-9px, 6px);
+	transform: rotate(-45deg) translate(-9px, 6px);
+}
+/*Fade second bar.*/
+.change .bar2 {
+	opacity: 0;
+}
+/*Rotate third bar.*/
+.change .bar3 {
+	-webkit-transform: rotate(45deg) translate(-8px, -8px);
+	transform: rotate(45deg) translate(-8px, -8px);
+}
+
+
+/*Arrow Change*/
+.change .arrow1 {
+	opacity: 0;
+}
+.change .arrow2 {
+	opacity: 100;
+}
+
+
+/*Footer Sticky*/
+.footer{
+	position: fixed;
+	width: 80%;
+	height: 90px;
+	left: 0;
+	bottom: 0;
+	margin: 0;
+	background-color: orange;
+}
+.footer button {
+	position: fixed;
+	width: 100%;
+	left: 50%;
+	transform: translate(-50%);
+	
+	display: inline-block;
+	padding: 15px 25px;
+
+	border-color: transparent;
+	background-color: orange;
+}
+
+
+/*Menu Listings*/
+.topnav {
+	display: inline-block;
+	overflow: hidden;
+	position: static;
+}
+.links #myLinks {
+	display: none;
+}
+.links a {
+	display: inline-block;
+  	color: black;
+  	text-decoration: none;
+	margin-left: 35px;
+  	font-size: 30px;
+}
+
+
+
+/*Animal Listings*/
+ul.animals{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+ul.animals li{
+	display: inline;
+	font-family: Verdana;
+	font-size: 20px;
+	font-weight:bolder;
+	color: black;
+	padding-top: -90px;
+	
+}
+.animalPic{
+	height: 60px;
+}
+a:link{
+	color: black;
+	background-color: transparent;
+  	text-decoration: none;
+}
+
+
+
+/* Species Listings*/
+.species #cockatooSpecies{
+	display:none;
+}
+.species #craneSpecies{
+	display:none;
+}
+.species #doveSpecies{
+	display:none;
+}
+.species #duckSpecies{
+	display:none;
+}
+.species #eagleSpecies{
+	display:none;
+}
+.species #falconSpecies{
+	display:none;
+}
+.species #finchSpecies{
+	display:none;
+}
+.species #gooseSpecies{
+	display:none;
+}
+.species #hornbillSpecies{
+	display:none;
+}
+.species #ibisSpecies{
+	display:none;
+}
+.species #kookaburraSpecies{
+	display:none;
+}
+
+.species a {
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: 15px;
+	color: black;
+	text-align: left;
+	display: inline-block;
+	margin-left: 35px;
+}
+
+ul.cockatoos {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+}
+ul.cockatoos li{
+	display: inline-block;
+	text-align: left;
+	font-family: Verdana;
+	font-size: 13px;
+	font-weight:bolder;
+	color: black;
+}
+
+ul.cranes {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+}
+ul.cranes li{
+	display: inline-block;
+	text-align: left;
+	font-family: Verdana;
+	font-size: 13px;
+	font-weight:bolder;
+	color: black;
+}
+
+ul.doves {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+}
+ul.doves li{
+	display: inline-block;
+	text-align: left;
+	font-family: Verdana;
+	font-size: 13px;
+	font-weight:bolder;
+	color: black;
+}
+
+ul.ducks {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+}
+ul.ducks li{
+	display: inline-block;
+	text-align: left;
+	font-family: Verdana;
+	font-size: 13px;
+	font-weight:bolder;
+	color: black;
+}
+
+ul.eagles {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+}
+ul.eagles li{
+	display: inline-block;
+	text-align: left;
+	font-family: Verdana;
+	font-size: 13px;
+	font-weight:bolder;
+	color: black;
+}
+
+ul.falcons {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+}
+ul.falcons li{
+	display: inline-block;
+	text-align: left;
+	font-family: Verdana;
+	font-size: 13px;
+	font-weight:bolder;
+	color: black;
+}
+
+ul.finches {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+}
+ul.finches li{
+	display: inline-block;
+	text-align: left;
+	font-family: Verdana;
+	font-size: 13px;
+	font-weight:bolder;
+	color: black;
+}
+
+ul.geese {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+}
+ul.geese li{
+	display: inline-block;
+	text-align: left;
+	font-family: Verdana;
+	font-size: 13px;
+	font-weight:bolder;
+	color: black;
+}
+
+ul.hornbills{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+}
+ul.hornbills li{
+	display: inline-block;
+	text-align: left;
+	font-family: Verdana;
+	font-size: 13px;
+	font-weight:bolder;
+	color: black;
+}
+
+ul.ibises{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+}
+ul.ibises li{
+	display: inline-block;
+	text-align: left;
+	font-family: Verdana;
+	font-size: 13px;
+	font-weight:bolder;
+	color: black;
+}
+
+ul.kookaburras{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+}
+ul.kookaburras li{
+	display: inline-block;
+	text-align: left;
+	font-family: Verdana;
+	font-size: 13px;
+	font-weight:bolder;
+	color: black;
+}
+
+
+

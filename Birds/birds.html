@@ -1,0 +1,887 @@
+<!doctype html>
+<html>
+	
+<head>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-webapp-status-bar-style" content="black">
+	<meta name="viewport" content="width=device-width, user-scalable=no" >
+	<title>ZooAdvisor - Amphibians </title>
+	<link rel="stylesheet" href="classStyle.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	
+</head>
+
+<header>
+	ZOOADVISOR
+	
+	<div class="topnav">
+		<!--Menu Actions-->
+		<div class="menu" onclick="menuToX(this), showMenu()">
+			<div class="bar1"></div>
+			<div class="bar2"></div>
+			<div class="bar3"></div>
+		</div>
+	</div>
+	
+	<hr>
+	
+	<div class="links">
+		<div id="myLinks">
+			<img src="../AnimalPictures/Menu/Tiger.png" alt="Tiger" width="80px" border = "3" align="middle">
+			<a href="#animals" align="middle">ANIMALS</a>
+			<hr>
+			<img src="../AnimalPictures/Menu/ZooPhoto.png" alt="Zoo Locations" width="80px" border = "3" align="middle">
+			<a href="#zoos">ZOOS</a>
+			<hr>
+			<img src="../AnimalPictures/Menu/QuestionMark.png" alt="Help" width="80px" border = "3" align="middle">
+			<a href="#zoos">HELP</a>
+			<hr>
+		</div>
+	</div>	
+	
+	
+	<script>
+		function menuToX(x) {
+			x.classList.toggle("change");
+		}
+		
+		function showMenu() {
+			var x = document.getElementById("myLinks");
+			if (x.style.display == "block"){
+				x.style.display = "none";
+			} else {
+				x.style.display = "block";
+			}
+		}
+	</script>
+
+</header>
+
+	
+<body>
+	
+	<!--Birds Listings-->
+	<ul class = "animals">
+		
+		<!--BARBET-->
+		<img class="animalPic" src="../AnimalPictures/Birds/Barbet.png" alt="axolotl" border="3" style="vertical-align: middle">
+		<li>BARBET</li> &ensp;
+		<a href="barbetData.html">
+			<i class="fas fa-arrow-alt-circle-right" style="font-size: 40px"></i>
+		</a>
+		&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;
+		<i class="fas fa-plus-circle" style="font-size: 40px"></i>
+		
+		<!--BULBUL-->
+		<br><br><img class="animalPic" src="../AnimalPictures/Birds/Bulbul.png" alt="axolotl" border="3" style="vertical-align: middle">
+		<li>BULBUL</li> &ensp;
+		<a href="bulbulData.html">
+			<i class="fas fa-arrow-alt-circle-right" style="font-size: 40px"></i>
+		</a>
+		&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;
+		<i class="fas fa-plus-circle" style="font-size: 40px"></i>
+		
+		<!--BUSTARD-->
+		<br><br><img class="animalPic" src="../AnimalPictures/Birds/Bustard.png" alt="axolotl" border="3" style="vertical-align: middle">
+		<li>BUSTARD</li> &ensp;
+		<a href="bustardData.html">
+			<i class="fas fa-arrow-alt-circle-right" style="font-size: 40px"></i>
+		</a>
+		&emsp;&emsp;&emsp;&emsp;&nbsp;
+		<i class="fas fa-plus-circle" style="font-size: 40px"></i>
+		
+		<!--CACIQUE-->
+		<br><br><img class="animalPic" src="../AnimalPictures/Birds/Cacique.png" alt="axolotl" border="3" style="vertical-align: middle">
+		<li>CACIQUE</li> &ensp;
+		<a href="caciqueData.html">
+			<i class="fas fa-arrow-alt-circle-right" style="font-size: 40px"></i>
+		</a>
+		&emsp;&emsp;&emsp;&emsp;&ensp;
+		<i class="fas fa-plus-circle" style="font-size: 40px"></i>
+		
+		<!--CARDINAL-->
+		<br><br><img class="animalPic" src="../AnimalPictures/Birds/Cardinal.png" alt="axolotl" border="3" style="vertical-align: middle">
+		<li>CARDINAL</li> &ensp;
+		<a href="cardinalData.html">
+			<i class="fas fa-arrow-alt-circle-right" style="font-size: 40px"></i>
+		</a>
+		&emsp;&emsp;&emsp;&ensp;
+		<i class="fas fa-plus-circle" style="font-size: 40px"></i>
+		
+		<!--COCKATIEL-->
+		<br><br><img class="animalPic" src="../AnimalPictures/Birds/Cockatiel.png" alt="axolotl" border="3" style="vertical-align: middle">
+		<li>COCKATIEL</li> &ensp;
+		<a href="cockatielData.html">
+			<i class="fas fa-arrow-alt-circle-right" style="font-size: 40px"></i>
+		</a>
+		&emsp;&emsp;&emsp;
+		<i class="fas fa-plus-circle" style="font-size: 40px"></i>
+		
+		<!--COCKATOOS LIST-->
+		<br><br><img class="animalPic" src="../AnimalPictures/Birds/Cockatoos/Umbrella.png" alt="frog" border="3" style="vertical-align: middle">
+		<li>COCKATOOS</li>&ensp;
+		<i onclick="switchArrow(this), showCockatoos()" class="fas fa-arrow-alt-circle-down" style="font-size: 40px"></i>
+		&emsp;&emsp;&ensp;
+		<i class="fas fa-plus-circle" style="font-size: 40px"></i>
+		<div class = "species">
+			<div id="cockatooSpecies">
+				<ul class = "cockatoos">
+					<hr>
+					
+					<img src="../AnimalPictures/Birds/Cockatoos/CitronCrested.png" alt="frog" width="30px" border = "3" style="vertical-align: middle;">
+					<li>CITRON-CRESTED COCKATOO</li>
+					<a href="citronCrestedData.html">
+						<i class="fas fa-arrow-alt-circle-right" style="vertical-align: middle; font-size: 30px; margin-left: -25px"></i>
+					</a>
+					
+					<br><br>
+					<img src="../AnimalPictures/Birds/Cockatoos/Palm.png" alt="frog" width="30px" border = "3" style="vertical-align: middle;">
+					<li>PALM COCKATOO</li>
+					<a href="palmData.html">
+						<i class="fas fa-arrow-alt-circle-right" style="vertical-align: middle; font-size: 30px; margin-left: -25px"></i>
+					</a>
+					
+					<br><br>
+					<img src="../AnimalPictures/Birds/Cockatoos/Umbrella.png" alt=" frog" width="30px" border = "3" style="vertical-align: middle;">
+					<li>UMBRELLA COCKATOO</li>
+					<a href="umbrellaData.html">
+						<i class="fas fa-arrow-alt-circle-right" style="vertical-align: middle; font-size: 30px; margin-left: -25px"></i>
+					</a>
+					
+					<hr>
+				</ul>
+			</div>
+		</div>
+		
+		<!--CONDOR-->
+		<br><img class="animalPic" src="../AnimalPictures/Birds/Condor.png" alt="axolotl" border="3" style="vertical-align: middle">
+		<li>CONDOR</li> &ensp;
+		<a href="condorData.html">
+			<i class="fas fa-arrow-alt-circle-right" style="font-size: 40px"></i>
+		</a>
+		&emsp;&emsp;&emsp;&emsp;&ensp;
+		<i class="fas fa-plus-circle" style="font-size: 40px"></i>
+		
+		<!--CONURE-->
+		<br><br><img class="animalPic" src="../AnimalPictures/Birds/Conure.png" alt="axolotl" border="3" style="vertical-align: middle">
+		<li>CONURE</li> &ensp;
+		<a href="conureData.html">
+			<i class="fas fa-arrow-alt-circle-right" style="font-size: 40px"></i>
+		</a>
+		&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;
+		<i class="fas fa-plus-circle" style="font-size: 40px"></i>
+		
+		<!--CHICKEN-->
+		<br><br><img class="animalPic" src="../AnimalPictures/Birds/Chicken.png" alt="axolotl" border="3" style="vertical-align: middle">
+		<li>CHICKEN</li> &ensp;
+		<a href="chickenData.html">
+			<i class="fas fa-arrow-alt-circle-right" style="font-size: 40px"></i>
+		</a>
+		&emsp;&emsp;&emsp;&emsp;&nbsp;
+		<i class="fas fa-plus-circle" style="font-size: 40px"></i>
+		
+		<!--CRAKE-->
+		<br><br><img class="animalPic" src="../AnimalPictures/Birds/Crake.png" alt="axolotl" border="3" style="vertical-align: middle">
+		<li>CRAKE</li> &ensp;
+		<a href="crakeData.html">
+			<i class="fas fa-arrow-alt-circle-right" style="font-size: 40px"></i>
+		</a>
+		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+		<i class="fas fa-plus-circle" style="font-size: 40px"></i>
+		
+		<!--CRANE LIST-->
+		<br><br><img class="animalPic" src="../AnimalPictures/Birds/Cranes/AfricanCrowned.png" alt="frog" border="3" style="vertical-align: middle">
+		<li>CRANES</li>&ensp;
+		<i onclick="switchArrow(this), showCranes()" class="fas fa-arrow-alt-circle-down" style="font-size: 40px"></i>
+		&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;
+		<i class="fas fa-plus-circle" style="font-size: 40px"></i>
+		<div class = "species">
+			<div id="craneSpecies">
+				<ul class = "cranes">
+					<hr>
+					
+					<img src="../AnimalPictures/Birds/Cranes/AfricanCrowned.png" alt="frog" width="30px" border = "3" style="vertical-align: middle;">
+					<li>AFRICAN CROWNED CRANE</li>
+					<a href="africanCrownedData.html">
+						<i class="fas fa-arrow-alt-circle-right" style="vertical-align: middle; font-size: 30px; margin-left: -25px"></i>
+					</a>
+					
+					<br><br>
+					<img src="../AnimalPictures/Birds/Cranes/BlackNecked.png" alt="frog" width="30px" border = "3" style="vertical-align: middle;">
+					<li>BLACK-NECKED CRANE</li>
+					<a href="blackNeckedData.html">
+						<i class="fas fa-arrow-alt-circle-right" style="vertical-align: middle; font-size: 30px; margin-left: -25px"></i>
+					</a>
+					
+					<br><br>
+					<img src="../AnimalPictures/Birds/Cranes/Hooded.png" alt=" frog" width="30px" border = "3" style="vertical-align: middle;">
+					<li>HOODED CRANE</li>
+					<a href="hoodedData.html">
+						<i class="fas fa-arrow-alt-circle-right" style="vertical-align: middle; font-size: 30px; margin-left: -25px"></i>
+					</a>
+					
+					<br><br>
+					<img src="../AnimalPictures/Birds/Cranes/RedCrowned.png" alt=" frog" width="30px" border = "3" style="vertical-align: middle;">
+					<li>RED CROWNED CRANE</li>
+					<a href="redCrownedData.html">
+						<i class="fas fa-arrow-alt-circle-right" style="vertical-align: middle; font-size: 30px; margin-left: -25px"></i>
+					</a>
+					
+					<br><br>
+					<img src="../AnimalPictures/Birds/Cranes/Sandhill.png" alt=" frog" width="30px" border = "3" style="vertical-align: middle;">
+					<li>SANDHILL CRANE</li>
+					<a href="sandhillData.html">
+						<i class="fas fa-arrow-alt-circle-right" style="vertical-align: middle; font-size: 30px; margin-left: -25px"></i>
+					</a>
+					
+					<br><br>
+					<img src="../AnimalPictures/Birds/Cranes/Siberian.png" alt=" frog" width="30px" border = "3" style="vertical-align: middle;">
+					<li>SIBERIAN CRANE</li>
+					<a href="siberianData.html">
+						<i class="fas fa-arrow-alt-circle-right" style="vertical-align: middle; font-size: 30px; margin-left: -25px"></i>
+					</a>
+					
+					<br><br>
+					<img src="../AnimalPictures/Birds/Cranes/Wattled.png" alt=" frog" width="30px" border = "3" style="vertical-align: middle;">
+					<li>WATTLED CRANE</li>
+					<a href="wattledData.html">
+						<i class="fas fa-arrow-alt-circle-right" style="vertical-align: middle; font-size: 30px; margin-left: -25px"></i>
+					</a>
+					
+					<br><br>
+					<img src="../AnimalPictures/Birds/Cranes/WhiteNaped.png" alt=" frog" width="30px" border = "3" style="vertical-align: middle;">
+					<li>WHITE-NAPED CRANE</li>
+					<a href="whiteNapedData.html">
+						<i class="fas fa-arrow-alt-circle-right" style="vertical-align: middle; font-size: 30px; margin-left: -25px"></i>
+					</a>
+					
+					<br><br>
+					<img src="../AnimalPictures/Birds/Cranes/Whooping.png" alt=" frog" width="30px" border = "3" style="vertical-align: middle;">
+					<li>WHOOPING CRANE</li>
+					<a href="whoopingData.html">
+						<i class="fas fa-arrow-alt-circle-right" style="vertical-align: middle; font-size: 30px; margin-left: -25px"></i>
+					</a>
+					
+					<hr>
+				</ul>
+			</div>
+		</div>
+		
+		<!--CUCKOO-->
+		<br><img class="animalPic" src="../AnimalPictures/Birds/Cuckoo.png" alt="axolotl" border="3" style="vertical-align: middle">
+		<li>CUCKOO</li> &ensp;
+		<a href="cuckooData.html">
+			<i class="fas fa-arrow-alt-circle-right" style="font-size: 40px"></i>
+		</a>
+		&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;
+		<i class="fas fa-plus-circle" style="font-size: 40px"></i>
+		
+		<!--DOVES LIST-->
+		<br><br><img class="animalPic" src="../AnimalPictures/Birds/Doves/BeautifulFruit.png" alt="frog" border="3" style="vertical-align: middle">
+		<li>DOVES</li>&ensp;
+		<i onclick="switchArrow(this), showDoves()" class="fas fa-arrow-alt-circle-down" style="font-size: 40px"></i>
+		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;
+		<i class="fas fa-plus-circle" style="font-size: 40px"></i>
+		<div class = "species">
+			<div id="doveSpecies">
+				<ul class = "doves">
+					<hr>
+					
+					<img src="../AnimalPictures/Birds/Doves/BeautifulFruit.png" alt="frog" width="30px" border = "3" style="vertical-align: middle;">
+					<li>BEAUTIFUL FRUIT DOVE</li>
+					<a href="beautifulFruitData.html">
+						<i class="fas fa-arrow-alt-circle-right" style="vertical-align: middle; font-size: 30px; margin-left: -25px"></i>
+					</a>
+					
+					<br><br>
+					<img src="../AnimalPictures/Birds/Doves/BlackNapedFruit.png" alt="frog" width="30px" border = "3" style="vertical-align: middle;">
+					<li>BLACK-NAPED FRUIT DOVE</li>
+					<a href="blackNapedFruitData.html">
+						<i class="fas fa-arrow-alt-circle-right" style="vertical-align: middle; font-size: 30px; margin-left: -25px"></i>
+					</a>
+					
+					<br><br>
+					<img src="../AnimalPictures/Birds/Doves/CrestedQuail.png" alt=" frog" width="30px" border = "3" style="vertical-align: middle;">
+					<li>CRESTED QUAIL DOVE</li>
+					<a href="umbrellaData.html">
+						<i class="fas fa-arrow-alt-circle-right" style="vertical-align: middle; font-size: 30px; margin-left: -25px"></i>
+					</a>
+					
+					<br><br>
+					<img src="../AnimalPictures/Birds/Doves/MindanaoBleedingHeart.png" alt=" frog" width="30px" border = "3" style="vertical-align: middle;">
+					<li>MINDANAO BLEEDING HEART DOVE</li>
+					<a href="mindanaoBleedingHeartData.html">
+						<i class="fas fa-arrow-alt-circle-right" style="vertical-align: middle; font-size: 30px; margin-left: -25px"></i>
+					</a>
+					
+					<hr>
+				</ul>
+			</div>
+		</div>
+		
+		<!--DUCKS LIST-->
+		<br><img class="animalPic" src="../AnimalPictures/Birds/Ducks/Smew.png" alt="frog" border="3" style="vertical-align: middle">
+		<li>DUCKS</li>&ensp;
+		<i onclick="switchArrow(this), showDucks()" class="fas fa-arrow-alt-circle-down" style="font-size: 40px"></i>
+		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;
+		<i class="fas fa-plus-circle" style="font-size: 40px"></i>
+		<div class = "species">
+			<div id="duckSpecies">
+				<ul class = "ducks">
+					<hr>
+					
+					<img src="../AnimalPictures/Birds/Ducks/ArgentineRuddy.png" alt="frog" width="30px" border = "3" style="vertical-align: middle;">
+					<li>ARGENTINE RUDDY DUCK</li>
+					<a href="argentineRuddyData.html">
+						<i class="fas fa-arrow-alt-circle-right" style="vertical-align: middle; font-size: 30px; margin-left: -25px"></i>
+					</a>
+					
+					<br><br>
+					<img src="../AnimalPictures/Birds/Ducks/AustralianWood.png" alt="frog" width="30px" border = "3" style="vertical-align: middle;">
+					<li>AUSTRALIAN WOOD DUCK</li>
+					<a href="australianWoodData.html">
+						<i class="fas fa-arrow-alt-circle-right" style="vertical-align: middle; font-size: 30px; margin-left: -25px"></i>
+					</a>
+					
+					<br><br>
+					<img src="../AnimalPictures/Birds/Ducks/BaersPochard.png" alt="frog" width="30px" border = "3" style="vertical-align: middle;">
+					<li>BAER'S POCHARD DUCK</li>
+					<a href="baersPochardData.html">
+						<i class="fas fa-arrow-alt-circle-right" style="vertical-align: middle; font-size: 30px; margin-left: -25px"></i>
+					</a>
+					
+					<br><br>
+					<img src="../AnimalPictures/Birds/Ducks/BarrowsGoldeneye.png" alt="frog" width="30px" border = "3" style="vertical-align: middle;">
+					<li>BARROW'S GOLDENEYE DUCK</li>
+					<a href="barrowsGoldeneyeData.html">
+						<i class="fas fa-arrow-alt-circle-right" style="vertical-align: middle; font-size: 30px; margin-left: -25px"></i>
+					</a>
+					
+					<br><br>
+					<img src="../AnimalPictures/Birds/Ducks/Bufflehead.png" alt="frog" width="30px" border = "3" style="vertical-align: middle;">
+					<li>BUFFLEHEAD DUCK</li>
+					<a href="buffleheadData.html">
+						<i class="fas fa-arrow-alt-circle-right" style="vertical-align: middle; font-size: 30px; margin-left: -25px"></i>
+					</a>
+					
+					<br><br>
+					<img src="../AnimalPictures/Birds/Ducks/Canvasback.png" alt="frog" width="30px" border = "3" style="vertical-align: middle;">
+					<li>CANVASBACK DUCK</li>
+					<a href="canvasbackData.html">
+						<i class="fas fa-arrow-alt-circle-right" style="vertical-align: middle; font-size: 30px; margin-left: -25px"></i>
+					</a>
+					
+					<br><br>
+					<img src="../AnimalPictures/Birds/Ducks/CommonEider.png" alt="frog" width="30px" border = "3" style="vertical-align: middle;">
+					<li>COMMON EIDER DUCK</li>
+					<a href="commonEiderData.html">
+						<i class="fas fa-arrow-alt-circle-right" style="vertical-align: middle; font-size: 30px; margin-left: -25px"></i>
+					</a>
+					
+					<br><br>
+					<img src="../AnimalPictures/Birds/Ducks/Mandarin.png" alt="frog" width="30px" border = "3" style="vertical-align: middle;">
+					<li>MANDARIN DUCK</li>
+					<a href="mandarinData.html">
+						<i class="fas fa-arrow-alt-circle-right" style="vertical-align: middle; font-size: 30px; margin-left: -25px"></i>
+					</a>
+					
+					<br><br>
+					<img src="../AnimalPictures/Birds/Ducks/NorthAmericanRuddy.png" alt="frog" width="30px" border = "3" style="vertical-align: middle;">
+					<li>NORTH AMERICAN RUDDY DUCK</li>
+					<a href="northAmericanRuddyData.html">
+						<i class="fas fa-arrow-alt-circle-right" style="vertical-align: middle; font-size: 30px; margin-left: -25px"></i>
+					</a>
+					
+					<br><br>
+					<img src="../AnimalPictures/Birds/Ducks/NorthAmericanWood.png" alt="frog" width="30px" border = "3" style="vertical-align: middle;">
+					<li>NORTH AMERICAN WOOD DUCK</li>
+					<a href="northAmericanWoodData.html">
+						<i class="fas fa-arrow-alt-circle-right" style="vertical-align: middle; font-size: 30px; margin-left: -25px"></i>
+					</a>
+					
+					<br><br>
+					<img src="../AnimalPictures/Birds/Ducks/NorthernPintail.png" alt="frog" width="30px" border = "3" style="vertical-align: middle;">
+					<li>NORTHERN PINTAIL DUCK</li>
+					<a href="northernPintailData.html">
+						<i class="fas fa-arrow-alt-circle-right" style="vertical-align: middle; font-size: 30px; margin-left: -25px"></i>
+					</a>
+					
+					<br><br>
+					<img src="../AnimalPictures/Birds/Ducks/NorthernShoveler.png" alt="frog" width="30px" border = "3" style="vertical-align: middle;">
+					<li>NORTHERN SHOVELER DUCK</li>
+					<a href="northernShoveler.html">
+						<i class="fas fa-arrow-alt-circle-right" style="vertical-align: middle; font-size: 30px; margin-left: -25px"></i>
+					</a>
+					
+					<br><br>
+					<img src="../AnimalPictures/Birds/Ducks/Philippine.png" alt="frog" width="30px" border = "3" style="vertical-align: middle;">
+					<li>PHILIPPINE DUCK</li>
+					<a href="philippineData.html">
+						<i class="fas fa-arrow-alt-circle-right" style="vertical-align: middle; font-size: 30px; margin-left: -25px"></i>
+					</a>
+					
+					<br><br>
+					<img src="../AnimalPictures/Birds/Ducks/Redhead.png" alt="frog" width="30px" border = "3" style="vertical-align: middle;">
+					<li>REDHEAD DUCK</li>
+					<a href="redheadData.html">
+						<i class="fas fa-arrow-alt-circle-right" style="vertical-align: middle; font-size: 30px; margin-left: -25px"></i>
+					</a>
+					
+					<br><br>
+					<img src="../AnimalPictures/Birds/Ducks/Smew.png" alt="frog" width="30px" border = "3" style="vertical-align: middle;">
+					<li>SMEW DUCK</li>
+					<a href="smewData.html">
+						<i class="fas fa-arrow-alt-circle-right" style="vertical-align: middle; font-size: 30px; margin-left: -25px"></i>
+					</a>
+					
+					<hr>
+				</ul>
+			</div>
+		</div>
+		
+		<!--EAGLES LIST-->
+		<br><img class="animalPic" src="../AnimalPictures/Birds/Eagles/Bald.png" alt="frog" border="3" style="vertical-align: middle">
+		<li>EAGLES</li>&ensp;
+		<i onclick="switchArrow(this), showEagles()" class="fas fa-arrow-alt-circle-down" style="font-size: 40px"></i>
+		&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;
+		<i class="fas fa-plus-circle" style="font-size: 40px"></i>
+		<div class = "species">
+			<div id="eagleSpecies">
+				<ul class = "eagles">
+					<hr>
+					
+					<img src="../AnimalPictures/Birds/Eagles/Bald.png" alt="frog" width="30px" border = "3" style="vertical-align: middle;">
+					<li>BALD EAGLE</li>
+					<a href="baldData.html">
+						<i class="fas fa-arrow-alt-circle-right" style="vertical-align: middle; font-size: 30px; margin-left: -25px"></i>
+					</a>
+					
+					<br><br>
+					<img src="../AnimalPictures/Birds/Eagles/StellersSea.png" alt=" frog" width="30px" border = "3" style="vertical-align: middle;">
+					<li>STELLER'S SEA EAGLE</li>
+					<a href="stellersSeaData.html">
+						<i class="fas fa-arrow-alt-circle-right" style="vertical-align: middle; font-size: 30px; margin-left: -25px"></i>
+					</a>
+					
+					<hr>
+				</ul>
+			</div>
+		</div>
+		
+		<!--EMU-->
+		<br><img class="animalPic" src="../AnimalPictures/Birds/Emu.png" alt="axolotl" border="3" style="vertical-align: middle">
+		<li>EMU</li> &ensp;
+		<a href="emuData.html">
+			<i class="fas fa-arrow-alt-circle-right" style="font-size: 40px"></i>
+		</a>
+		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;
+		<i class="fas fa-plus-circle" style="font-size: 40px"></i>
+		
+		<!--FALCONS LIST-->
+		<br><br><img class="animalPic" src="../AnimalPictures/Birds/Falcons/Peregrine.png" alt="frog" border="3" style="vertical-align: middle">
+		<li>FALCONS</li>&ensp;
+		<i onclick="switchArrow(this), showFalcons()" class="fas fa-arrow-alt-circle-down" style="font-size: 40px"></i>
+		&emsp;&emsp;&emsp;&emsp;&ensp;
+		<i class="fas fa-plus-circle" style="font-size: 40px"></i>
+		<div class = "species">
+			<div id="falconSpecies">
+				<ul class = "falcons">
+					<hr>
+					
+					<img src="../AnimalPictures/Birds/Falcons/AfricanPygmy.png" alt="frog" width="30px" border = "3" style="vertical-align: middle;">
+					<li>AFRICAN PYGMY FALCON</li>
+					<a href="africanPygmyData.html">
+						<i class="fas fa-arrow-alt-circle-right" style="vertical-align: middle; font-size: 30px; margin-left: -25px"></i>
+					</a>
+					
+					<br><br>
+					<img src="../AnimalPictures/Birds/Falcons/Peregrine.png" alt=" frog" width="30px" border = "3" style="vertical-align: middle;">
+					<li>PEREGRINE FALCON</li>
+					<a href="peregrineData.html">
+						<i class="fas fa-arrow-alt-circle-right" style="vertical-align: middle; font-size: 30px; margin-left: -25px"></i>
+					</a>
+					
+					<hr>
+				</ul>
+			</div>
+		</div>
+		
+		<!--FINCHES LIST-->
+		<br><img class="animalPic" src="../AnimalPictures/Birds/Finches/Gouldian.png" alt="frog" border="3" style="vertical-align: middle">
+		<li>FINCHES</li>&ensp;
+		<i onclick="switchArrow(this), showFinches()" class="fas fa-arrow-alt-circle-down" style="font-size: 40px"></i>
+		&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;
+		<i class="fas fa-plus-circle" style="font-size: 40px"></i>
+		<div class = "species">
+			<div id="finchSpecies">
+				<ul class = "finches">
+					<hr>
+					
+					<img src="../AnimalPictures/Birds/Finches/DoubleBarred.png" alt="frog" width="30px" border = "3" style="vertical-align: middle;">
+					<li>ADOUBLE-BARRED FINCH</li>
+					<a href="doubleBarredData.html">
+						<i class="fas fa-arrow-alt-circle-right" style="vertical-align: middle; font-size: 30px; margin-left: -25px"></i>
+					</a>
+					
+					<br><br>
+					<img src="../AnimalPictures/Birds/Finches/Gouldian.png" alt=" frog" width="30px" border = "3" style="vertical-align: middle;">
+					<li>GOULDIAN FINCH</li>
+					<a href="gouldianData.html">
+						<i class="fas fa-arrow-alt-circle-right" style="vertical-align: middle; font-size: 30px; margin-left: -25px"></i>
+					</a>
+					
+					<hr>
+				</ul>
+			</div>
+		</div>
+		
+		<!--FLAMINGO-->
+		<br><img class="animalPic" src="../AnimalPictures/Birds/Flamingo.png" alt="axolotl" border="3" style="vertical-align: middle">
+		<li>FLAMINGO</li> &ensp;
+		<a href="flamingoData.html">
+			<i class="fas fa-arrow-alt-circle-right" style="font-size: 40px"></i>
+		</a>
+		&emsp;&emsp;&emsp;
+		<i class="fas fa-plus-circle" style="font-size: 40px"></i>
+		
+		<!--FROGMOUTH-->
+		<br><br><img class="animalPic" src="../AnimalPictures/Birds/Frogmouth.png" alt="axolotl" border="3" style="vertical-align: middle">
+		<li>FROGMOUTH</li> &ensp;
+		<a href="frogmouthData.html">
+			<i class="fas fa-arrow-alt-circle-right" style="font-size: 40px"></i>
+		</a>
+		&emsp;&ensp;
+		<i class="fas fa-plus-circle" style="font-size: 40px"></i>
+		
+		<!--GEESE LIST-->
+		<br><br><img class="animalPic" src="../AnimalPictures/Birds/Geese/Canada.png" alt="frog" border="3" style="vertical-align: middle">
+		<li>GEESE</li>&ensp;
+		<i onclick="switchArrow(this), showGeese()" class="fas fa-arrow-alt-circle-down" style="font-size: 40px"></i>
+		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;
+		<i class="fas fa-plus-circle" style="font-size: 40px"></i>
+		<div class = "species">
+			<div id="gooseSpecies">
+				<ul class = "geese">
+					<hr>
+					
+					<img src="../AnimalPictures/Birds/Geese/AfricanPygmy.png" alt="frog" width="30px" border = "3" style="vertical-align: middle;">
+					<li>AFRICAN PYGMY GOOSE</li>
+					<a href="africanPygmyGooseData.html">
+						<i class="fas fa-arrow-alt-circle-right" style="vertical-align: middle; font-size: 30px; margin-left: -25px"></i>
+					</a>
+					
+					<br><br>
+					<img src="../AnimalPictures/Birds/Geese/Andean.png" alt=" frog" width="30px" border = "3" style="vertical-align: middle;">
+					<li>ANDEAN GOOSE</li>
+					<a href="andeanData.html">
+						<i class="fas fa-arrow-alt-circle-right" style="vertical-align: middle; font-size: 30px; margin-left: -25px"></i>
+					</a>
+					
+					<br><br>
+					<img src="../AnimalPictures/Birds/Geese/Canada.png" alt=" frog" width="30px" border = "3" style="vertical-align: middle;">
+					<li>CANADA GOOSE</li>
+					<a href="canadaData.html">
+						<i class="fas fa-arrow-alt-circle-right" style="vertical-align: middle; font-size: 30px; margin-left: -25px"></i>
+					</a>
+					
+					<br><br>
+					<img src="../AnimalPictures/Birds/Geese/Emperor.png" alt=" frog" width="30px" border = "3" style="vertical-align: middle;">
+					<li>EMPEROR GOOSE</li>
+					<a href="emperorData.html">
+						<i class="fas fa-arrow-alt-circle-right" style="vertical-align: middle; font-size: 30px; margin-left: -25px"></i>
+					</a>
+					
+					<br><br>
+					<img src="../AnimalPictures/Birds/Geese/LesserWhiteFronted.png" alt=" frog" width="30px" border = "3" style="vertical-align: middle;">
+					<li>LESSER WHITE-FRONTED GOOSE</li>
+					<a href="lesserWhiteFrontedData.html">
+						<i class="fas fa-arrow-alt-circle-right" style="vertical-align: middle; font-size: 30px; margin-left: -25px"></i>
+					</a>
+					
+					<br><br>
+					<img src="../AnimalPictures/Birds/Geese/Orinoco.png" alt=" frog" width="30px" border = "3" style="vertical-align: middle;">
+					<li>ORINOCO GOOSE</li>
+					<a href="orinocoData.html">
+						<i class="fas fa-arrow-alt-circle-right" style="vertical-align: middle; font-size: 30px; margin-left: -25px"></i>
+					</a>
+					
+					<br><br>
+					<img src="../AnimalPictures/Birds/Geese/RedBreasted.png" alt=" frog" width="30px" border = "3" style="vertical-align: middle;">
+					<li>RED-BREASTED GOOSE</li>
+					<a href="redBreastedData.html">
+						<i class="fas fa-arrow-alt-circle-right" style="vertical-align: middle; font-size: 30px; margin-left: -25px"></i>
+					</a>
+					
+					<br><br>
+					<img src="../AnimalPictures/Birds/Geese/Ross.png" alt=" frog" width="30px" border = "3" style="vertical-align: middle;">
+					<li>ROSS GOOSE</li>
+					<a href="rossData.html">
+						<i class="fas fa-arrow-alt-circle-right" style="vertical-align: middle; font-size: 30px; margin-left: -25px"></i>
+					</a>
+					
+					<br><br>
+					<img src="../AnimalPictures/Birds/Geese/Swan.png" alt=" frog" width="30px" border = "3" style="vertical-align: middle;">
+					<li>SWAN GOOSE</li>
+					<a href="swanGooseData.html">
+						<i class="fas fa-arrow-alt-circle-right" style="vertical-align: middle; font-size: 30px; margin-left: -25px"></i>
+					</a>
+					
+					<hr>
+				</ul>
+			</div>
+		</div>
+		
+		<!--HAMERKOP-->
+		<br><img class="animalPic" src="../AnimalPictures/Birds/Hamerkop.png" alt="axolotl" border="3" style="vertical-align: middle">
+		<li>HAMERKOP</li> &ensp;
+		<a href="hamerkopData.html">
+			<i class="fas fa-arrow-alt-circle-right" style="font-size: 40px"></i>
+		</a>
+		&emsp;&emsp;&ensp;
+		<i class="fas fa-plus-circle" style="font-size: 40px"></i>
+		
+		<!--HAWK-->
+		<br><br><img class="animalPic" src="../AnimalPictures/Birds/Hawk.png" alt="axolotl" border="3" style="vertical-align: middle">
+		<li>HAWK</li> &ensp;
+		<a href="hawkData.html">
+			<i class="fas fa-arrow-alt-circle-right" style="font-size: 40px"></i>
+		</a>
+		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+		<i class="fas fa-plus-circle" style="font-size: 40px"></i>
+		
+		<!--HERON-->
+		<br><br><img class="animalPic" src="../AnimalPictures/Birds/Heron.png" alt="axolotl" border="3" style="vertical-align: middle">
+		<li>HERON</li> &ensp;
+		<a href="heronData.html">
+			<i class="fas fa-arrow-alt-circle-right" style="font-size: 40px"></i>
+		</a>
+		&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;
+		<i class="fas fa-plus-circle" style="font-size: 40px"></i>
+		
+		<!--HORNBILLS LIST-->
+		<br><br><img class="animalPic" src="../AnimalPictures/Birds/Hornbills/Rhinoceros.png" alt="frog" border="3" style="vertical-align: middle">
+		<li>HORNBILLS</li>&ensp;
+		<i onclick="switchArrow(this), showHornbills()" class="fas fa-arrow-alt-circle-down" style="font-size: 40px"></i>
+		&emsp;&emsp;&ensp;&nbsp;
+		<i class="fas fa-plus-circle" style="font-size: 40px"></i>
+		<div class = "species">
+			<div id="hornbillSpecies">
+				<ul class = "hornbills">
+					<hr>
+					
+					<img src="../AnimalPictures/Birds/Hornbills/GreatIndian.png" alt="frog" width="30px" border = "3" style="vertical-align: middle;">
+					<li>GREAT INDIAN HORNBILL</li>
+					<a href="greatIndianData.html">
+						<i class="fas fa-arrow-alt-circle-right" style="vertical-align: middle; font-size: 30px; margin-left: -25px"></i>
+					</a>
+					
+					<br><br>
+					<img src="../AnimalPictures/Birds/Hornbills/Rhinoceros.png" alt=" frog" width="30px" border = "3" style="vertical-align: middle;">
+					<li>RHINOCEROS HORNBILL</li>
+					<a href="rhinocerosHornbillData.html">
+						<i class="fas fa-arrow-alt-circle-right" style="vertical-align: middle; font-size: 30px; margin-left: -25px"></i>
+					</a>
+					
+					<br><br>
+					<img src="../AnimalPictures/Birds/Hornbills/SilveryCheeked.png" alt=" frog" width="30px" border = "3" style="vertical-align: middle;">
+					<li>SILVERY CHEEKED HORNBILL</li>
+					<a href="silveryCheekedData.html">
+						<i class="fas fa-arrow-alt-circle-right" style="vertical-align: middle; font-size: 30px; margin-left: -25px"></i>
+					</a>
+					
+					<hr>
+				</ul>
+			</div>
+		</div>
+		
+		<!--IBISES LIST-->
+		<br><img class="animalPic" src="../AnimalPictures/Birds/Ibises/Scarlet.png" alt="frog" border="3" style="vertical-align: middle">
+		<li>IBISES</li>&ensp;
+		<i onclick="switchArrow(this), showIbises()" class="fas fa-arrow-alt-circle-down" style="font-size: 40px"></i>
+		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+		<i class="fas fa-plus-circle" style="font-size: 40px"></i>
+		<div class = "species">
+			<div id="ibisSpecies">
+				<ul class = "ibises">
+					<hr>
+					
+					<img src="../AnimalPictures/Birds/Ibises/Hadada.png" alt="frog" width="30px" border = "3" style="vertical-align: middle;">
+					<li>HADADA IBIS</li>
+					<a href="hadadaData.html">
+						<i class="fas fa-arrow-alt-circle-right" style="vertical-align: middle; font-size: 30px; margin-left: -25px"></i>
+					</a>
+					
+					<br><br>
+					<img src="../AnimalPictures/Birds/Ibises/Scarlet.png" alt=" frog" width="30px" border = "3" style="vertical-align: middle;">
+					<li>SCARLET IBIS</li>
+					<a href="scarletData.html">
+						<i class="fas fa-arrow-alt-circle-right" style="vertical-align: middle; font-size: 30px; margin-left: -25px"></i>
+					</a>
+					
+					<hr>
+				</ul>
+			</div>
+		</div>
+		
+		<!--KIWI CHAT-->
+		<br><img class="animalPic" src="../AnimalPictures/Birds/Kiwi.png" alt="axolotl" border="3" style="vertical-align: middle">
+		<li>KIWI</li> &ensp;
+		<a href="kiwiData.html">
+			<i class="fas fa-arrow-alt-circle-right" style="font-size: 40px"></i>
+		</a>
+		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;
+		<i class="fas fa-plus-circle" style="font-size: 40px"></i>
+		
+		<!--KOOKABURRA LIST-->
+		<br><br><img class="animalPic" src="../AnimalPictures/Birds/Kookaburras/Laughing.png" alt="frog" border="3" style="vertical-align: middle">
+		<li>KOOKABURRAS</li>&ensp;
+		<i onclick="switchArrow(this), showKookaburras()" class="fas fa-arrow-alt-circle-down" style="font-size: 40px"></i>
+		&nbsp;
+		<i class="fas fa-plus-circle" style="font-size: 40px"></i>
+		<div class = "species">
+			<div id="kookaburraSpecies">
+				<ul class = "kookaburras">
+					<hr>
+					
+					<img src="../AnimalPictures/Birds/Kookaburras/BlueWinged.png" alt="frog" width="30px" border = "3" style="vertical-align: middle;">
+					<li>BLUE-WINGED KOOKABURRA</li>
+					<a href="blueWingedData.html">
+						<i class="fas fa-arrow-alt-circle-right" style="vertical-align: middle; font-size: 30px; margin-left: -25px"></i>
+					</a>
+					
+					<br><br>
+					<img src="../AnimalPictures/Birds/Kookaburras/Laughing.png" alt=" frog" width="30px" border = "3" style="vertical-align: middle;">
+					<li>LAUGHING KOOKABURRA</li>
+					<a href="laughingData.html">
+						<i class="fas fa-arrow-alt-circle-right" style="vertical-align: middle; font-size: 30px; margin-left: -25px"></i>
+					</a>
+					
+					<hr>
+				</ul>
+			</div>
+		</div>
+		
+		<!--ROBIN CHAT-->
+		<br><br><img class="animalPic" src="../AnimalPictures/Birds/RobinChat.png" alt="axolotl" border="3" style="vertical-align: middle">
+		<li>ROBIN CHAT</li> &ensp;
+		<a href="robinChatData.html">
+			<i class="fas fa-arrow-alt-circle-right" style="font-size: 40px"></i>
+		</a>
+		&emsp;&ensp;
+		<i class="fas fa-plus-circle" style="font-size: 40px"></i>
+		
+		<br><br><br><br><br><br>
+		
+		
+		
+	</ul>
+	
+	<!--DONE Footer-->
+	<div class="footer">
+		<a href="../createZoo.html">
+			<button class="button" onClick="#">
+				<i class="fas fa-arrow-alt-circle-left" style="font-size: 60px"></i>
+			</button>
+		</a>
+	</div>
+	
+	<script>
+		
+		function switchArrow(x){
+			x.classList.toggle("fa-arrow-alt-circle-up");
+		}
+			
+		function showCockatoos(){
+			var x = document.getElementById("cockatooSpecies");
+			if (x.style.display == "block"){
+				x.style.display = "none";
+			} else {
+				x.style.display = "block";
+			}
+		} 		
+		function showCranes(){
+			var x = document.getElementById("craneSpecies");
+			if (x.style.display == "block"){
+				x.style.display = "none";
+			} else {
+				x.style.display = "block";
+			}
+		}		
+		function showDoves(){
+			var x = document.getElementById("doveSpecies");
+			if (x.style.display == "block"){
+				x.style.display = "none";
+			} else {
+				x.style.display = "block";
+			}
+		}
+		function showDucks(){
+			var x = document.getElementById("duckSpecies");
+			if (x.style.display == "block"){
+				x.style.display = "none";
+			} else {
+				x.style.display = "block";
+			}
+		}	
+		function showEagles(){
+			var x = document.getElementById("eagleSpecies");
+			if (x.style.display == "block"){
+				x.style.display = "none";
+			} else {
+				x.style.display = "block";
+			}
+		}		
+		function showFalcons(){
+			var x = document.getElementById("falconSpecies");
+			if (x.style.display == "block"){
+				x.style.display = "none";
+			} else {
+				x.style.display = "block";
+			}
+		}		
+		function showFinches(){
+			var x = document.getElementById("finchSpecies");
+			if (x.style.display == "block"){
+				x.style.display = "none";
+			} else {
+				x.style.display = "block";
+			}
+		}
+		function showGeese(){
+			var x = document.getElementById("gooseSpecies");
+			if (x.style.display == "block"){
+				x.style.display = "none";
+			} else {
+				x.style.display = "block";
+			}
+		}
+		function showHornbills(){
+			var x = document.getElementById("hornbillSpecies");
+			if (x.style.display == "block"){
+				x.style.display = "none";
+			} else {
+				x.style.display = "block";
+			}
+		}
+		function showIbises(){
+			var x = document.getElementById("ibisSpecies");
+			if (x.style.display == "block"){
+				x.style.display = "none";
+			} else {
+				x.style.display = "block";
+			}
+		}
+		function showKookaburras(){
+			var x = document.getElementById("kookaburraSpecies");
+			if (x.style.display == "block"){
+				x.style.display = "none";
+			} else {
+				x.style.display = "block";
+			}
+		}
+		
+	</script>
+	
+</body>
+	
+</html>
