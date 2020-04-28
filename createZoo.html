@@ -14,30 +14,46 @@
 </head>
 
 <header>
-		ZOOADVISOR
+	ZOOADVISOR
 	
-		<div class="topnav">
-			<!--Menu Actions-->
-			<div class="menu" onclick="menuToX(this), showMenu()">
+	<div class="topnav">
+		<!--Menu Actions-->
+		<div class="menu" onclick="menuToX(this), showMenu()">
 			<div class="bar1"></div>
 			<div class="bar2"></div>
 			<div class="bar3"></div>
 		</div>
-		</div>
+	</div>
 	
-		<hr>
+	<hr>
 	
 	<div class="links">
 		<div id="myLinks">
-			<img src="AnimalPictures/Menu/Tiger.png" alt="Tiger" width="80px" border = "3" align="middle">
-			<a href="#animals" align="middle">ANIMALS</a>
+		<ul class = "menuList">
+			
+			<img src="AnimalPictures/Menu/Tiger.png" alt="Tiger" width="80px" border = "3" style="vertical-align: middle">
+			<li>ANIMALS</li>
+			<a href="#animals">
+				<i class="fas fa-arrow-alt-circle-right" style="vertical-align: middle; font-size: 50px"></i>
+			</a>
+			
+			<br><br>
+			
+			<img src="AnimalPictures/Menu/ZooPhoto.png" alt="Zoo Locations" width="80px" border = "3" style="vertical-align: middle">
+			<li>ZOOS</li>&emsp;&ensp;
+			<a href="#animals">
+				<i class="fas fa-arrow-alt-circle-right" style="vertical-align: middle; font-size: 50px"></i>
+			</a>
+			
+			<br><br>
+		
+			<img src="AnimalPictures/Menu/QuestionMark.png" alt="Help" width="80px" border = "3" style="vertical-align: middle">
+			<li>INFO</li>&emsp;&emsp;
+			<a href="#animals">
+				<i class="fas fa-arrow-alt-circle-right" style="vertical-align: middle; font-size: 50px"></i>
+			</a>
 			<hr>
-			<img src="AnimalPictures/Menu/ZooPhoto.png" alt="Zoo Locations" width="80px" border = "3" align="middle">
-			<a href="#zoos">ZOOS</a>
-			<hr>
-			<img src="AnimalPictures/Menu/QuestionMark.png" alt="Help" width="80px" border = "3" align="middle">
-				<a href="#zoos">HELP</a>
-			<hr>
+		</ul>
 		</div>
 	</div>	
 	
@@ -50,12 +66,13 @@
 		function showMenu() {
 			var x = document.getElementById("myLinks");
 			if (x.style.display == "block"){
-					x.style.display = "none";
-				} else {
-					x.style.display = "block";
-				}
+				x.style.display = "none";
+			} else {
+				x.style.display = "block";
 			}
-		</script>	
+		}
+	</script>
+
 </header>
 
 	
@@ -69,39 +86,39 @@
 		<img class="amphibPic" src="AnimalPictures/Classifications/Amphibians.png" alt="frog" border = "3" style="vertical-align: middle">
 		<li>AMPHIBIANS </li>&ensp;
 		<a href="Amphibians/amphibians.html">
-			<i class="fas fa-arrow-alt-circle-right" style="font-size: 40px"></i>
+			<i class="fas fa-arrow-alt-circle-right" style="font-size: 40px; vertical-align: middle"></i>
 		</a>
 		
 		<br><br><img class="birdPic" src="AnimalPictures/Classifications/Birds.png" alt="falcon" border = "3" style="vertical-align: middle">
 		<li class = "birds">BIRDS </li>&ensp;
 		<a href="Birds/birds.html">
-			<i class="fas fa-arrow-alt-circle-right" style="font-size: 40px"></i>
+			<i class="fas fa-arrow-alt-circle-right" style="font-size: 40px; vertical-align: middle"></i>
 		</a>
 			
 		<br><br><img class="fishPic" src="AnimalPictures/Classifications/Fish.png" alt="fish" border = "3" style="vertical-align: middle">
 		<li class = "fish">FISH </li>&ensp;
 		<a href="Fish/fish.html">
-			<i class="fas fa-arrow-alt-circle-right" style="font-size: 40px"></i>
+			<i class="fas fa-arrow-alt-circle-right" style="font-size: 40px; vertical-align: middle"></i>
 		</a>
 		
 		<br><br><img class="insectPic" src="AnimalPictures/Classifications/Insect.png" alt="insect" border = "3" style="vertical-align: middle">
 		<li class = "insects">INSECTS </li>&ensp;
-		<i class="fas fa-arrow-alt-circle-right" style="font-size: 40px"></i>
+		<i class="fas fa-arrow-alt-circle-right" style="font-size: 40px; vertical-align: middle"></i>
 		
 		<br><br><img class="mammalPic" src="AnimalPictures/Classifications/Mammal.png" alt="bear" border = "3" style="vertical-align: middle">
 		<li class = "mammals">MAMMALS </li>&ensp;
-		<i class="fas fa-arrow-alt-circle-right" style="font-size: 40px"></i>
+		<i class="fas fa-arrow-alt-circle-right" style="font-size: 40px; vertical-align: middle"></i>
 		
 		<br><br><img class="reptilePic" src="AnimalPictures/Classifications/Reptile.png" alt="reptile" border = "3" style="vertical-align: middle">
 		<li class = "reptiles">REPTILES </li>&ensp;
-		<i class="fas fa-arrow-alt-circle-right" style="font-size: 40px"></i>
+		<i class="fas fa-arrow-alt-circle-right" style="font-size: 40px; vertical-align: middle"></i>
 		
 		<br><br><br><br><br><br>
 	</ul>
 	
 	<!--DONE Footer-->
 	<div class="footer">
-		<button class="button" onClick="#">DONE</button>
+		<button class="button" onClick="document.location = 'animalList.html';">DONE</button>
 	</div>
 
 </body>

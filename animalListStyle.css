@@ -79,20 +79,37 @@ ul.menuList li {
 /*Footer Sticky*/
 .footer{
 	position: fixed;
-	width: 80%;
+	width: 100%;
 	height: 90px;
 	left: 0;
 	bottom: 0;
 	margin: 0;
 	background-color: orange;
 }
-.footer button {
+.footer button.button1 {
 	position: fixed;
-	left: 50%;
+	left: 25%;
 	transform: translate(-50%, 25%);
+	padding: 15px 20px;
+	
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: 20px;
+	color: black;
+	text-align: center;
+	
+	background-color: green;
+	
+	border-color: black;
+	border-width: 3px;
+}
+.footer button.button2 {
+	position: fixed;
+	right: 25%;
+	transform: translate(40%, 25%);
 	
 	display: inline-block;
-	padding: 15px 25px;
+	padding: 15px 20px;
 	
 	font-family: Verdana;
 	font-weight: bold;
@@ -107,21 +124,38 @@ ul.menuList li {
 }
 
 
+/*Your Animals*/
+h1{
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: 28px;
+	color: black;
+	text-align: center;
+	margin: 10px;
+	margin-bottom: -20px;
+}
+hr.v2{
+	border: 2px solid black;
+	margin-top: -2px;
+	width: 58%;
+	margin-bottom: -8px;
+}
+
+
 /*Classification Listings*/
 ul.classifications{
 	list-style-type: none;
 	margin: 0px;
 	padding: 0px;
 }
-
 ul.classifications li{
 	display: inline;
 	font-family: Verdana;
-	vertical-align: middle;
 	font-size: 25px;
 	font-weight: bolder;
 	color: black;
 	padding-top: -90px;
+	vertical-align: middle;
 	
 }
 .amphibPic, .birdPic, .fishPic, .insectPic, .mammalPic, .reptilePic{

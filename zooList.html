@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+	
+	
+	
+<head>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-webapp-status-bar-style" content="black">
+	<meta name="viewport" content="width=device-width, user-scalable=no" >
+	<title>Create Zoo</title>
+	<link rel="stylesheet" href="zooListStyle.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	
+</head>
+
+<header>
+	ZOOADVISOR
+	
+	<div class="topnav">
+		<!--Menu Actions-->
+		<div class="menu" onclick="menuToX(this), showMenu()">
+			<div class="bar1"></div>
+			<div class="bar2"></div>
+			<div class="bar3"></div>
+		</div>
+	</div>
+	
+	<hr>
+	
+	<div class="links">
+		<div id="myLinks">
+		<ul class = "menuList">
+			
+			<img src="AnimalPictures/Menu/Tiger.png" alt="Tiger" width="80px" border = "3" style="vertical-align: middle">
+			<li>ANIMALS</li>
+			<a href="#animals">
+				<i class="fas fa-arrow-alt-circle-right" style="vertical-align: middle; font-size: 50px"></i>
+			</a>
+			
+			<br><br>
+			
+			<img src="AnimalPictures/Menu/ZooPhoto.png" alt="Zoo Locations" width="80px" border = "3" style="vertical-align: middle">
+			<li>ZOOS</li>&emsp;&ensp;
+			<a href="#animals">
+				<i class="fas fa-arrow-alt-circle-right" style="vertical-align: middle; font-size: 50px"></i>
+			</a>
+			
+			<br><br>
+		
+			<img src="AnimalPictures/Menu/QuestionMark.png" alt="Help" width="80px" border = "3" style="vertical-align: middle">
+			<li>INFO</li>&emsp;&emsp;
+			<a href="#animals">
+				<i class="fas fa-arrow-alt-circle-right" style="vertical-align: middle; font-size: 50px"></i>
+			</a>
+			<hr>
+		</ul>
+		</div>
+	</div>	
+	
+	
+	<script>
+		function menuToX(x) {
+			x.classList.toggle("change");
+		}
+		
+		function showMenu() {
+			var x = document.getElementById("myLinks");
+			if (x.style.display == "block"){
+				x.style.display = "none";
+			} else {
+				x.style.display = "block";
+			}
+		}
+	</script>
+
+</header>
+
+	
+
+<body>
+
+	<!--Classifications-->
+	
+	<h1> 
+		RESULTS
+		<hr class="v2">
+	</h1>
+	
+	<br><br>
+	
+	<ul class = "first">
+		
+		<div class="first">
+			<img class="firstPic" src="AnimalPictures/Zoos/Stone.png" alt="frog" border = "3" style="vertical-align: middle">
+			<li>STONE ZOO</li><br>
+			<p class="first">64% MATCH&nbsp; 
+				<a href="firstResults.html">
+					<i class="fas fa-arrow-alt-circle-right" style="font-size: 45px; color: green; vertical-align: middle">
+					</i>
+				</a>
+			</p>
+		</div>
+	</ul>
+	
+	<ul class = "others">
+	
+		<br><br>
+	
+		<div class="second">
+			<img class="othersPic" src="AnimalPictures/Zoos/Southwick.png" alt="frog" border = "3" style="vertical-align: middle">
+			<li>SOUTHWICK'S ZOO</li><br>
+			<p class="second">43% MATCH&nbsp; 
+				<a href="Zoos/southwick.html">
+					<i class="fas fa-arrow-alt-circle-right" style="font-size: 30px; color: lawngreen; vertical-align: middle">
+					</i>
+				</a>
+			</p>
+		</div>
+		
+		<br>
+		
+		<div class="third">
+			<img class="othersPic" src="AnimalPictures/Zoos/Buttonwood.png" alt="falcon" border = "3" style="vertical-align: middle">
+			<li class = "birds">BUTTONWOOD PARK ZOO</li><br>
+			<p class="third">36% MATCH&nbsp;
+				<a href="Zoos/buttonwood.html">
+					<i class="fas fa-arrow-alt-circle-right" style="font-size: 30px; color: yellow; vertical-align: middle">
+					</i>
+				</a>
+			</p>
+		</div>
+			
+		<br>
+		
+		<div class="fourth">
+			<img class="othersPic" src="AnimalPictures/Zoos/Capron.png" alt="fish" border = "3" style="vertical-align: middle">
+			<li class = "fish">CAPRON PARK ZOO</li><br>
+			<p class="fourth">26% MATCH&nbsp;
+				<a href="Zoos/capron.html">
+					<i class="fas fa-arrow-alt-circle-right" style="font-size: 30px; color: #FF7600; vertical-align: middle">
+					</i>
+				</a>
+			</p>
+		</div>
+		
+		
+		<br>
+		
+		<div class="fifth">
+			<img class="othersPic" src="AnimalPictures/Zoos/Franklin.png" alt="insect" border = "3" style="vertical-align: middle">
+			<li class = "insects">FRANKLIN PARK ZOO</li><br>
+			<p class="fifth">21% MATCH&nbsp;
+				<a href="Zoos/franklin.html">
+					<i class="fas fa-arrow-alt-circle-right" style="font-size: 30px; color: red; vertical-align: middle">
+					</i>
+				</a>
+			</p>
+		</div>
+		
+		<br><br><br><br><br><br>
+	</ul>
+	
+	<!--DONE Footer-->
+	<div class="footer">
+		<button class="button" onClick="goBack()">GO BACK</button>
+		
+		<script>
+			function goBack() {
+				window.history.back();
+			}
+		</script>
+		
+	</div>
+
+</body>
+
+
+</html>

@@ -93,6 +93,20 @@ hr {
 	margin-left: 35px;
   	font-size: 30px;
 }
+ul.menuList {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+ul.menuList li {
+	display: inline;
+	font-family: Verdana;
+	font-size: 26px;
+	font-weight:bolder;
+	color: black;
+	padding-top: -90px;
+}
 
 
 

@@ -79,7 +79,7 @@ ul.menuList li {
 /*Footer Sticky*/
 .footer{
 	position: fixed;
-	width: 80%;
+	width: 100%;
 	height: 90px;
 	left: 0;
 	bottom: 0;
@@ -107,28 +107,59 @@ ul.menuList li {
 }
 
 
+/*Your Zoo*/
+h1{
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: 28px;
+	color: black;
+	text-align: center;
+	margin: 10px;
+	margin-bottom: -20px;
+}
+hr.v2{
+	border: 2px solid black;
+	margin-top: 10px;
+	width: 93%;
+	margin-bottom: -8px;
+}
+
+
 /*Classification Listings*/
 ul.classifications{
 	list-style-type: none;
 	margin: 0px;
 	padding: 0px;
 }
-
 ul.classifications li{
 	display: inline;
 	font-family: Verdana;
-	vertical-align: middle;
 	font-size: 25px;
 	font-weight: bolder;
 	color: black;
 	padding-top: -90px;
+	vertical-align: middle;
 	
 }
 .amphibPic, .birdPic, .fishPic, .insectPic, .mammalPic, .reptilePic{
 	height: 60px;
 }
+
+.firstPic{
+	height: 70px;
+}
+
 a:link{
 	color: black;
 	background-color: transparent;
   	text-decoration: none;
+}
+
+p{
+	font-family: Verdana;
+	font-size: 25px;
+	font-weight: bolder;
+	color: green;
+	text-align: center;
+	margin: 10px
 }
